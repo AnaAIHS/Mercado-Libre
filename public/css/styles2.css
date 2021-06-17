@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header {
+    background-color: #EAC926; 
+    padding:20px;
+}
+
+.logo {
+    width: 45%;
+}
+
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+
+.hamburger-button{
+    background-color:#03264C;
+    color:#ffffff;
+    display:block;
+    max-width: 50px;
+    padding:15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin:auto;
+}
+
+.main-navbar{
+    display:none;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color:#222222;
+    display:inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+section {
+    width: 100%;
+}
+
+
+body, html{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ebebeb;
+    margin:0px;
+    padding: 0px;
+    width:100%;
+}
+
+.seccion-productos{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:0px;
+}
+
+.titular {
+    font-size: 24px;
+    text-align: center;
+}
+
+.precio {
+    font-size: 18px;
+    display:inline-block;
+}
+
+.descuento {
+    font-size: 16px;
+    color:#39b54a;
+    display:inline-block;
+}
+
+#banner {
+    width: 100%;
+}
+
+.producto {
+    display:block;
+    width:100%;
+    height:auto;
+    align-self: center;
+}
+
+.articulo {
+    background-color: white;
+    border: solid 1px #ebebeb;
+    margin: 10px;
+    padding-left: 15px; padding-right: 15px;
+    width:90%;
+    position:relative;
+}
+
+.articulo:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.posicion-burbuja{
+    position:relative;
+    text-align: right;
+    padding-right:10px;
+    top:-30px;
+    background-color: transparent;
+    margin:0px;
+    margin-bottom:-45px;
+}
+
+.burbuja{
+    display:inline-block;
+    position:relative;
+}
+
+.camion{
+    color:#39b54a;
+    position: absolute;
+    bottom:27%;
+    right:27%;
+    display:inline-block;
+
+}
+
+footer {
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+    padding: 50px 20px;
+    width:100%;
+    font-size: 13px;
+}
+
+.icon {
+    color: rgb(16, 121, 241);
+}
+
+.icon:hover{
+    color:blue;
+}
+
+.seccion-footer{
+    padding:10px 15px;
+}
+
+@media (min-width: 450px){
+    .articulo{
+        flex: 1 0 42%;
+    }
+
+    .seccion-productos{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .seccion-footer{
+        width:170px;
+        flex-grow: 1;
+    }
+}
+
+@media (min-width:768px){
+
+    .main-header-top-bar{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+
+    .hamburger-button{
+        display:none;
+    }
+
+    .main-navbar{
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul{
+        display:flex;
+    }
+
+    .main-navbar li{
+        margin:0 5px;
+    }
+
+
+    .articulo{
+        flex: 1 0 20%;
+    }
+
+    .search-placeholder {
+        height: 2px;
+        margin: 5px;
+        background-color: none; 
+        flex-basis: 23%;
+        flex-grow: 1;
+      }
+}
+
+@media (min-width:1200px){
+    .logo{
+        width:250px;
+    }
+
+    .main-header-top-bar, .main-navbar{
+        max-width:1200px;
+        margin:auto;
+    }
+
+    .main-header-top-bar{
+        align-items: center;
+    }
+
+    .copy-header{
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+        margin:0;
+    }
+
+
+
+    .main-navbar{
+        margin-top: 40px;
+    }
+
+    .main-navbar li{
+        margin:10px;
+    }
+
+    .main-navbar a{
+        font-size: 19px;
+    }
+}
+
+form {
+    position: relative;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 60px;
+}
+
+.dato {
+    margin-bottom: 10px;
+    width: 85vw;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.intereses {
+    display: flex;
+    flex-direction: column;
+}
